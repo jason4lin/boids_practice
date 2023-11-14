@@ -18,7 +18,11 @@ class Boid {
     setMaxSpeed(newMaxSpeed) {
         this.maxspeed = newMaxSpeed;
         this.velocity.setMag(random(newMaxSpeed/2,newMaxSpeed))
-      }
+    }
+
+    setMaxForce(newMaxForce) {
+        this.maxforce = newMaxForce;
+    }
 
     edges(){
         if (this.position.x > width){
